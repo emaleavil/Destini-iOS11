@@ -60,7 +60,7 @@ class ViewController: UIViewController {
     }
     
     func showAlert() {
-        let controller =  UIAlertController(title: "End", message: "You,ve reached to the end of the story. You're game have been started at the beggining", preferredStyle: .alert)
+        let controller =  UIAlertController(title: "End", message: "You,ve reached to the end of the story. You're game have been started at the beggining", preferredStyle: .actionSheet)
         controller.addAction(UIAlertAction(title: "Go on", style: .default) { _ in self.startOver()})
         self.present(controller, animated: true, completion: nil)
     }
